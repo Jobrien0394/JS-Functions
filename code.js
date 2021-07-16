@@ -14,6 +14,7 @@ console.log("Exercise One"); // Do not modify the lines like this before each ex
 
 function getNumberFive() {
   // Your code here
+return 5;
 }
 
 
@@ -22,6 +23,7 @@ function getNumberFive() {
 console.log("-----Tests for Exercise One-----");
 console.log("* Returns the number 5");
 console.log(getNumberFive() === 5);
+
 
 
 // ----------------------------------------------------------------------------------------------
@@ -33,7 +35,7 @@ console.log("Exercise Two");
 // Write your code here 👇
 
 function add(a, b) {
-
+return a + b
 }
 
 //  -------TESTS---------------------------------------------------------------
@@ -55,7 +57,7 @@ console.log("Exercise Three");
 // Write your code here 👇
 
 function absoluteValue(number) {
-
+return number
 
 }
 
@@ -78,7 +80,7 @@ console.log("Exercise Four");
 // Write your code here 👇
 
 function concatenate(message, text) {
-
+  return (message + text)
 
 }
 
@@ -98,10 +100,19 @@ console.log("Exercise Five");
 // 
 // Write your code here 👇
 
+let arrayOfNames = ["bob", "nancy", "john", "shawnie", "waldo", "shaquon", "julie"]
+
+let name = "nancy";
+
 function contains(arrayOfNames, name) {
 
-
+  for (let i = 0; i < arrayOfNames.length; i += 1) {
+  if (arrayOfNames[i] === name) {
+    return true
+  }
 }
+    return false
+   }
 
 //  -------TESTS---------------------------------------------------------------
 //  Run these commands to make sure you did it right. They should all be true.
@@ -121,12 +132,17 @@ console.log("Exercise Six");
 //   Just call your previous function, "contains," with the array and the name "waldo" and return the result.
 // 
 // Write your code here 👇
+let arrayOfFirstNames = ["bob", "nancy", "john", "shawnie", "waldo", "shaquon", "julie"]
 
-function containsWaldo(arrayOfNames) {
-
-
+let name2 = "waldo"
+function containsWaldo(arrayOfFirstNames) {
+  
+  if (arrayOfFirstNames.includes(name2)){
+    return true;
+  }
+  
+    return false;
 }
-
 //  -------TESTS---------------------------------------------------------------
 //  Run these commands to make sure you did it right. They should all be true.
 console.log("-----Tests for Exercise Six-----");
@@ -144,9 +160,16 @@ console.log("Exercise Seven");
 // 
 // Write your code here 👇
 
-function searchForWaldo(arrayOfNames) {
+let arrayOfNames2 = ["bob", "nancy", "john", "shawnie", "waldo", "shaquon", "julie"]
 
+let name3 = "waldo"
 
+function searchForWaldo(arrayOfNames2) {
+  if (arrayOfNames2.includes(name3)){
+    return "I " +"found " + "waldo!";
+  }
+  
+    return "I " + "couldn't " + "find " + "waldo..." ;
 }
 
 //  -------TESTS---------------------------------------------------------------
@@ -178,7 +201,7 @@ console.log("Optional Practice");
 // Write your code here 👇
 
 function printNames(arrayOfNames) {
-
+return 
 
 }
 
