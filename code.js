@@ -56,9 +56,11 @@ console.log("Exercise Three");
 //
 // Write your code here 👇
 
-function absoluteValue(number) {
+function absoluteValue(number){
+    if (number > 0){
 return number
-
+  }
+  return number * -1
 }
 
 //  -------TESTS---------------------------------------------------------------
